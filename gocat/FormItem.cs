@@ -1,5 +1,6 @@
 ﻿using BAL;
 using BEL;
+using MetroFramework;
 using MetroFramework.Forms;
 using System;
 using System.Collections.Generic;
@@ -21,10 +22,10 @@ namespace gocat
         public FormAgama() //Iki Mlaku pas proses Instansiasi
         {
             InitializeComponent();//Iki gawanan :D
-            loadDataAgama(); //Nampilne method sing nok isor kui
+            loadDataItem(); //Nampilne method sing nok isor kui
         }
 
-        public void loadDataAgama()//Iki method e gawe dewe , digae load data agama
+        public void loadDataItem()//Iki method e gawe dewe , digae load data agama
         {
             DataTable dt = new DataTable();
             dt = opAgama.viewItem(item);// Nyeluk Method Agama , parametere objek agama
@@ -73,18 +74,20 @@ namespace gocat
 
             if (baris > 0)
             {
-                MessageBox.Show("Data Berhasil Disimpan :)");
-                loadDataAgama(); // load data grid e , ben iso ngapdet table e langsung
+                MetroMessageBox.Show(this, "Alert", "Tambah Data Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                loadDataItem(); // load data grid e , ben iso ngapdet table e langsung
             }
             else
             {
-                MessageBox.Show("Data Gagal Disimpan :(");
+                MetroMessageBox.Show(this, "Alert", "Data gagal Disimpan", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void metroButton3_Click(object sender, EventArgs e)
         {
-
+            metroTextBox1.Text = "";
+            metroTextBox2.Text = "";
+            label2.Text = "ID";
         }
 
         private void metroGrid1_MouseClick(object sender, MouseEventArgs e)
@@ -101,14 +104,14 @@ namespace gocat
             item.Name = metroTextBox1.Text;
             item.Desc = metroTextBox2.Text; //Iki sing ate diinputne jal
             opAgama.updateItem(item);
-            loadDataAgama();
+            loadDataItem();
         }
 
         private void metroButton5_Click(object sender, EventArgs e)
         {
             item.Id = Int32.Parse(label2.Text); //Iki gae njumuk ID ne
             opAgama.deleteItem(item);
-            loadDataAgama();
+            loadDataItem();
         }
     }
 }

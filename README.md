@@ -134,6 +134,11 @@ GO
 
 ```
 
+### Showcases
+
+![](doc/showcases.PNG "String Cucur")
+
+
 ### Author 
 [Ivan Fadila Putra](https://github.com/ffadilaputra) 
 
