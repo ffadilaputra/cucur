@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gocat", "gocat\gocat.csproj", "{49F2011E-135D-4272-8886-9517C14F4FFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp", "gocat\MainApp.csproj", "{49F2011E-135D-4272-8886-9517C14F4FFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DataAccessLogic\DAL.csproj", "{F8F5F0C5-7CB2-49A4-B86C-30D010CC6CD4}"
 EndProject

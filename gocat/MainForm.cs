@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace gocat
 {
-    public partial class MainForm : Form
+    public partial class MainForm : MetroForm
     {
         public MainForm()
         {
@@ -21,6 +22,11 @@ namespace gocat
         {
             FormAgama fa = new FormAgama();
             fa.ShowDialog();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

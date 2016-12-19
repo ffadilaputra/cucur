@@ -38,9 +38,9 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.masterToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(810, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(770, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -55,7 +55,7 @@
             // agamaToolStripMenuItem
             // 
             this.agamaToolStripMenuItem.Name = "agamaToolStripMenuItem";
-            this.agamaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.agamaToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.agamaToolStripMenuItem.Text = "Agama";
             this.agamaToolStripMenuItem.Click += new System.EventHandler(this.agamaToolStripMenuItem_Click);
             // 
@@ -67,7 +67,8 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "Cabe";
+            this.Text = "Cucur Apps";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BEL
 {
-    public class Agama
+    public class Item
     {
         private int _id;
 
@@ -16,13 +16,23 @@ namespace BEL
             set { _id = value; }
         }
 
-        private string _keterangan;
+        private string _name;
 
-        public string Keterangan
+        public string Name
         {
-            get { return _keterangan; }
-            set { _keterangan = value; }
+            get { return _name; }
+            set { _name = value; }
         }
+
+        private string _desc;
+
+        public string Desc
+        {
+            get { return _desc; }
+            set { _desc = value; }
+        }
+
+
 
     }
 }
