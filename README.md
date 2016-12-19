@@ -138,6 +138,6 @@ GO
 [Ivan Fadila Putra](https://github.com/ffadilaputra) 
 
 ### Referensi
-[Metro UI by Dennis Magno ](https://github.com/dennismagno/metroframework-modern-uia)
-[Understand 3-Tier Architecture in C#](https://www.codeproject.com/tips/662107/understand-tier-architecture-in-csharp)
+- [Metro UI by Dennis Magno ](https://github.com/dennismagno/metroframework-modern-uia)
+- [Understand 3-Tier Architecture in C#](https://www.codeproject.com/tips/662107/understand-tier-architecture-in-csharp)
 
